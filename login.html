@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <!-- main stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome stylesheet  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- google fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- favicon icon  -->
+     <link rel="icon" type="images/" href="./Assets/Img/favicon/favicon.jpg">
+</head>
+<body>
+  <header class="header_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <marquee behavior="smooth" direction="right" scrollamount="10">
+          <p>Welcome to ShopEase - Your One-Stop Online Store!</p>
+          </marquee>
+          <p>Exclusive Offer: Get 20% off on your first purchase!</p>
+        </div>
+        <div class="col-md-6 text-end header_btn">
+          <a href="cart.html" class="btn">
+            <i class="fas fa-shopping-cart"></i> Cart (0)
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- start navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-sticky">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Assets/Img/favicon/logo.jpg" alt="company_logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-list"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+              <li><a class="dropdown-item" href="#">Home Base</a></li>
+              <li><a class="dropdown-item" href="#">Home & Living</a></li>
+              <li><a class="dropdown-item" href="#">Beauty & Health</a></li>
+              <li><a class="dropdown-item" href="#">Sports & Outdoors</a></li>
+              <li><a class="dropdown-item" href="#">Toys & Hobbies</a></li>
+              <li><a class="dropdown-item" href="#">Office Stores</a></li>
+              <li><a class="dropdown-item" href="#">Phones & Tablets</a></li>
+              <li><a class="dropdown-item" href="#">Fashion</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Men's Shoes</a></li>
+              <li><a class="dropdown-item" href="#">Women's Shoes</a></li>
+              <li><a class="dropdown-item" href="#">Cosmetics</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbardropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </a>
+            <ul class="dropdown-menu profile_menu" aria-labelledby="navbardropdown">
+              <li><a class="dropdown-item" href="#"><i class="fa fa-key"></i>Sign In</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-briefcase"></i>Orders</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-envelope"></i>Inbox</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i>Wishlist</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-regular fa-id-card"></i>Vouchers</a></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </Div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar  -->
+<section id="login">
+    <div class="login container">
+            <div class="login_wrapper text-center">
+              <div class="row">
+                <div class="col-lg-12 col-sm-6 col-md-6">
+                    <h3 class="login_header">Login to Account</h3>
+                    <form action="login.php" method="post" class="login_form">
+                      <div class="form-group">
+                          <input type="email" name="email" class="form-control" id="Email" placeholder="Enter Email . . ." required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" name="password" id="Password" placeholder="Enter Password" required>
+                      </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn">Login</button>
+                        </div>
+                    </form>
+                    <span class="login_span">Login With</span>
+                    <div class="signin_Options">
+                      <a href="https://accounts.google.com/signup"><img src="./Assets/Google.png"></a>
+                      <a href="https://accounts.facebook.com/signup"><img src="./Assets/facebook.png"></a>
+                    </div>
+                    <div class="create_account">
+                        <h4 class="account_Span">Don't Have Account!</h4>
+                        <a href="create_account.html" class="create_account_link">Creat Account</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+    </div>
+</section>
+  <!-- footer  -->
+   <footer id="footer">
+    <div class="social_icon">
+      <h3>Follow us on:</h3>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="copyright text-center">
+        <p>@2025 ShopEase.All right reserved</p>
+    </div>
+   </footer>
+
+<!-- Bootstrap JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Assets/js/search_bar.js"></script>
+</body>
+</html>
